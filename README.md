@@ -21,9 +21,8 @@ A seguir veremos com mais detalhes o que e como precisa ser feito 🚀
 
 Para realizar esse desafio, criamos para você esse modelo que você deve utilizar como um template do GitHub.
 
-O template está disponível na seguinte URL:
+O template está disponível na seguinte URL:https://github.com/rocketseat-education/ignite-template-reactjs-criando-um-projeto-do-zero
 
-[](https://github.com/rocketseat-education/ignite-template-reactjs-criando-um-projeto-do-zero)
 
 **Dica**: Caso não saiba utilizar repositórios do GitHub como template, temos um guia em **[nosso FAQ](https://www.notion.so/FAQ-Desafios-ddd8fcdf2339436a816a0d9e45767664).**
 
@@ -47,11 +46,7 @@ Vamos nessa?
 
 Como você já deve ter visto nas aulas, o Prismic é uma Headless CMS. Vamos utilizá-lo para gerar documentos repetíveis (post) que vão retornar alguns dados para a aplicação. Nesse ponto, é muito importante que você siga **exatamente** a estrutura que vai ser apresentada aqui pois os testes **dependem** disso.
 
-Vou deixar abaixo um video mostrando a estrutura do Documento e um exemplo de Publicação para você se familiarizar. Em seguida, discutiremos campo a campo.
-
-[https://s3-us-west-2.amazonaws.com/secure.notion-static.com/af40056a-bfff-4075-b796-643c2353e399/prismic.mp4](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/af40056a-bfff-4075-b796-643c2353e399/prismic.mp4)
-
-No vídeo apresentado, foi possível ver que nosso documento repetível `posts` tem 8 campos. Vamos descrever cada um deles:
+o nosso documento repetível `posts` tem 8 campos. Vamos descrever cada um deles:
 
 - **slug**
     - Tipo: UID
@@ -69,7 +64,6 @@ No vídeo apresentado, foi possível ver que nosso documento repetível `posts` 
     - Tipo: Image
     - Configurações do campo:
         
-        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ee38dc96-7ced-4c7e-b20b-53530ec31aa5/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ee38dc96-7ced-4c7e-b20b-53530ec31aa5/Untitled.png)
         
     - Descrição: Input de imagens. Recebe valores manualmente. Esse campo será utilizado como banner do Post.
 - **content**
@@ -83,15 +77,12 @@ No vídeo apresentado, foi possível ver que nosso documento repetível `posts` 
             - Tipo: Rich Text
             - Configurações do campo:
                 
-                ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/79c8e7b6-a0be-4713-9447-bf9f13e0082e/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/79c8e7b6-a0be-4713-9447-bf9f13e0082e/Untitled.png)
                 
             - Descrição: Input de *rich text* (HTML). Recebe valores manualmente. Esse campo será utilizado como conteúdo da seção do Post. Perceba que nas configurações do campo, selecionamos algumas opções para que o seu texto tenha varias formatações (negrito, hyperlinks, listas, etc.).
 
 Mesmo com as explicações acima, ficou em dúvida de como ficarão esses campos na sua página?   Deixamos abaixo um print descrevendo cada campo no resultado final para te ajudar:
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/024f1f70-b118-4f17-849e-8d1ce379043d/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/024f1f70-b118-4f17-849e-8d1ce379043d/Untitled.png)
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d00fab1c-464b-4473-a90e-9dba17ba9d51/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d00fab1c-464b-4473-a90e-9dba17ba9d51/Untitled.png)
+<img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F024f1f70-b118-4f17-849e-8d1ce379043d%2FUntitled.png?table=block&id=706e8b9b-bf52-4d77-a5df-f4bd85e4dfdd&spaceId=08f749ff-d06d-49a8-a488-9846e081b224&width=2000&userId=658e8302-d2b8-4b48-b498-c17895241097&cache=v2" />
+<img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd00fab1c-464b-4473-a90e-9dba17ba9d51%2FUntitled.png?table=block&id=fa13c671-9f48-41c6-a311-7841a1ebba62&spaceId=08f749ff-d06d-49a8-a488-9846e081b224&width=2000&userId=658e8302-d2b8-4b48-b498-c17895241097&cache=v2" />
 
 1. slug
 2. banner
@@ -113,8 +104,7 @@ Por fim, vamos falar rapidamente dos métodos que esperamos que você utilize em
 - **src/pages/posts/[slug.tsx]**: Utilizar o método `query` para buscar todos os `posts` e o `getByUID` para buscar as informações do `post` específico.
 
 Além disso, não esqueça de configurar no arquivo `.env.local` na raiz do seu projeto a variável `PRISMIC_API_ENDPOINT` com a url da sua API
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e0accf51-c0f2-4602-8a6b-78f638110a9e/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e0accf51-c0f2-4602-8a6b-78f638110a9e/Untitled.png)
+<img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe0accf51-c0f2-4602-8a6b-78f638110a9e%2FUntitled.png?table=block&id=b6ace32e-7456-4b1f-b007-d5bd4d7e0cb7&spaceId=08f749ff-d06d-49a8-a488-9846e081b224&width=1680&userId=658e8302-d2b8-4b48-b498-c17895241097&cache=v2" />
 
 Caso tenha dúvidas, dê uma olhada na documentação oficial do Prismic:
 
@@ -153,11 +143,6 @@ Agora para duplicar os layouts, basta você clicar no link abaixo. Ele adicionar
 
 [Desafios Módulo 3 ReactJS](https://www.figma.com/file/0Y26j0tf1K2WB5c1ja5hov/Desafios-M%C3%B3dulo-3-ReactJS/duplicate)
 
-### Verificando estilização
-
-Para verificar a estilização de um elemento, basta selecioná-lo e escolhar na barra lateral direito a opção `Inspect` no menu superior direito. Dessa forma você vai ter a maioria das informações que precisa. Caso precise das distâncias em relação a outros elementos, basta colocar o mouse em cima do elemento que deseja pegar a distância.
-
-[https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1e292b38-d5a7-4fb2-b3f2-d194d4401662/figma.mp4](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1e292b38-d5a7-4fb2-b3f2-d194d4401662/figma.mp4)
 
 ### Exportando do Figma
 
@@ -167,7 +152,6 @@ Se você está tendo dificuldades em encontrar o comando `Export` no layout do F
 - Na sidebar direita, clique na aba `Design`;
 - Deslize até o final da sidebar para encontrar a opção `Export`.
 
-[https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a3f1b967-3a93-4e83-8abb-d3d22ae5da75/figma2.mp4](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a3f1b967-3a93-4e83-8abb-d3d22ae5da75/figma2.mp4)
 
 ## fetch
 
@@ -233,7 +217,7 @@ Nesse arquivo você deve configurar a importação da fonte `Inter` do Google Fo
 
 ### pages/index.tsx
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a266fffe-64cd-4b29-8e16-5ca0a36fb018/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a266fffe-64cd-4b29-8e16-5ca0a36fb018/Untitled.png)
+<img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F963ff31f-5679-4a7d-a81c-e5de7f7b10e7%2FUntitled.png?table=block&id=9bc47e5c-4bf6-49f4-b79d-7d129bc48da9&spaceId=08f749ff-d06d-49a8-a488-9846e081b224&width=1780&userId=658e8302-d2b8-4b48-b498-c17895241097&cache=v2" />
 
 Nesse arquivo você deve renderizar todos os posts da paginação e exibir o botão `Carregar mais posts` caso existam mais posts a ser carregados (ou seja, o valor `next_page` retornado pela Prismic não pode ser `null`). Caso contrário, o botão não deve ser renderizado.
 
@@ -249,7 +233,6 @@ Nesse arquivo você deve implementar toda a estilização da página principal.
 
 ### pages/post/[slug].tsx
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/963ff31f-5679-4a7d-a81c-e5de7f7b10e7/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/963ff31f-5679-4a7d-a81c-e5de7f7b10e7/Untitled.png)
 
 Nesse arquivo você deve renderizar toda a informação do post e o component `Header`.
 
@@ -327,4 +310,3 @@ Está com dúvidas (ou curioso 👀) para ver como deve ficar a aplicação ao f
 
 Esse desafio deve ser entregue a partir da plataforma da Rocketseat. Envie o link do repositório que você fez suas alterações. Após concluir o desafio, além de ter mandado o código para o GitHub, fazer um post no LinkedIn é uma boa forma de demonstrar seus conhecimentos e esforços para evoluir na sua carreira para oportunidades futuras.
 
-Feito com 💜 por Rocketseat 👋 Participe da nossa [comunidade aberta!](https://discord.gg/pUU3CG4Z)
